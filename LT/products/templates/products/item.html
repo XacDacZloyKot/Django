@@ -1,0 +1,30 @@
+{% extends "products/base.html" %}
+
+{% block content %}
+<section class="item-show-page container">
+    <div class="item">
+        <h1 class="name_item">{{products.brand}} {{products.brend_models}}</h1>
+        {% if products.image %}
+            <p><img src="{{products.image.url}}" class="item_img"></p>
+        {% endif %}
+        {% autoescape off %}
+        <div class="item_info">
+            <div class="item_description">
+                <p class="item_description">
+                    {{products.description|linebreaks}}
+                </p>
+            </div>
+            <p class="item_description">
+                Размер(RU):{{products.size}}
+            </p>
+            {% endautoescape %}
+            <p class="item_price">
+                {{products.price|floatformat:'g'}} ₽
+            </p>
+            <a href="#" class="item_buy_btn">
+                В корзину
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

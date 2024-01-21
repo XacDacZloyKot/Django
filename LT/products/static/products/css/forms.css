@@ -1,0 +1,48 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+}
+.form__submit-btn{
+    background-color: rgb(185, 144, 223);
+    width: fit-content;
+    border-radius: 10px;
+    padding: 15px;
+}
+.form_label{
+    display: block;
+}
+.form__input{
+    width: fit-content;
+    border: 2px solid black;
+    border-radius: 2px;
+    width: 300px;
+}
+.form__error{
+    color: rgb(133, 0, 0);
+}
+.form__input-filter{
+    width: 150px;
+    border: 2px solid;
+    border-radius: 5px; 
+}
+.btm_submit{
+    margin-top: 20px;
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+.grid-form{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap:10px
+}
