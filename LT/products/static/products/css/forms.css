@@ -6,7 +6,7 @@
     background-color:rgb(255, 255, 255);
     border-radius: 30px;
 }
-.form__submit-btn{
+.form__submit-btn {
     background-color: rgb(185, 144, 223);
     width: fit-content;
     border-radius: 10px;
@@ -29,9 +29,14 @@
     border: 2px solid;
     border-radius: 5px; 
 }
+.form__input-reg{
+    width: 250px;
+    border: 2px solid;
+    border-radius: 5px; 
+}
 .btm_submit{
     margin-top: 20px;
-    padding: 5px;
+    padding: 10px;
     border: 2px solid;
     border-radius: 5px;
     font-family: 'Courier New', Courier, monospace;

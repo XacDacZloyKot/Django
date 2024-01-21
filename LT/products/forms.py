@@ -50,24 +50,24 @@ class AddProductForm(forms.ModelForm):
     
 
 class RegisterUserForm(UserCreationForm):
-    username = forms.CharField(label='Логин', widget=forms.TextInput(attrs={'class': 'form__input'}))
-    email = forms.EmailField(label='Email', widget=forms.EmailInput(attrs={'class': 'form__input'}))
-    password1 = forms.CharField(label='Пароль', widget=forms.PasswordInput(attrs={'class': 'form__input'}))
-    password2 = forms.CharField(label='Пароль повтор', widget=forms.PasswordInput(attrs={'class': 'form__input'}))
+    username = forms.CharField(label='Логин', widget=forms.TextInput(attrs={'class': 'form__input-reg'}))
+    email = forms.EmailField(label='Email', widget=forms.EmailInput(attrs={'class': 'form__input-reg'}))
+    password1 = forms.CharField(label='Пароль', widget=forms.PasswordInput(attrs={'class': 'form__input-reg'}))
+    password2 = forms.CharField(label='Пароль повтор', widget=forms.PasswordInput(attrs={'class': 'form__input-reg'}))
     
     class Meta:
         model = User
         fields = ('username', 'email', 'password1', 'password2')
         widget = {
-            'username': forms.TextInput(attrs={'class': 'form__input'}),
-            'password1': forms.PasswordInput(attrs={'class': 'form__input'}),
-            'password2': forms.PasswordInput(attrs={'class': 'form__input'}),
+            'username': forms.TextInput(attrs={'class': 'form__input-reg'}),
+            'password1': forms.PasswordInput(attrs={'class': 'form__input-reg'}),
+            'password2': forms.PasswordInput(attrs={'class': 'form__input-reg'}),
         }
         
 
 class LoginUserForm(AuthenticationForm):
-    username = forms.CharField(label='Логин', widget=forms.TextInput(attrs={'class': 'form__input'}))
-    password = forms.CharField(label='Пароль', widget=forms.PasswordInput(attrs={'class': 'form__input'}))
+    username = forms.CharField(label='Логин', widget=forms.TextInput(attrs={'class': 'form__input-reg'}))
+    password = forms.CharField(label='Пароль', widget=forms.PasswordInput(attrs={'class': 'form__input-reg'}))
     
     
 class FilterProductForm(forms.Form):
